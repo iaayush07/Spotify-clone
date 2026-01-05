@@ -1,9 +1,6 @@
-import { Text, View } from "react-native";
+import { Redirect } from "expo-router";
 
 export default function Index() {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Spotify Clone</Text>
-    </View>
-  );
+  console.log("index layout");
+  return <Redirect href="/home" />;
 }
